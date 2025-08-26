@@ -205,18 +205,18 @@ def print_statistics(results):
     
     print(f"\n Lifetime:")
     if len(results['lifetimes']['all']) > 0:
-        print(f"   All: {len(results['lifetimes']['all'])} events, "
+        print(f"All: {len(results['lifetimes']['all'])} events, "
               f"Median: {np.median(results['lifetimes']['all']):.2f} min")
-        print(f"   Thresh: {len(results['lifetimes']['thresh'])} events, "
+        print(f"Thresh: {len(results['lifetimes']['thresh'])} events, "
               f"Median: {np.median(results['lifetimes']['thresh']):.2f} min")
     else:
-        print("   No lifetime data available")
+        print("No lifetime data available")
     
     print(f"\n Area (arcsec²):")
     if len(results['areas']['arcsec_all']) > 0:
-        print(f"   All: {len(results['areas']['arcsec_all'])}, "
+        print(f"All: {len(results['areas']['arcsec_all'])}, "
               f"Median: {np.median(results['areas']['arcsec_all']):.3f}")
-        print(f"   Thresh: {len(results['areas']['arcsec_thresh'])}, "
+        print(f"Thresh: {len(results['areas']['arcsec_thresh'])}, "
               f"Median: {np.median(results['areas']['arcsec_thresh']):.3f}")
     else:
         print("   No area data available")
@@ -243,7 +243,7 @@ if __name__ == "__main__":
     results = analyze_datasets()
     
     # Create and save plot
-    output_file = os.path.join(Config.OUTPUT_PATH, "")
+    output_file = os.path.join(Config.OUTPUT_PATH, "combined_comparison.pdf")
     create_comparison_plot(results, output_file)
     
     # Print statistics
