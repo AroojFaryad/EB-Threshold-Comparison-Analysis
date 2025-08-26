@@ -243,7 +243,7 @@ if __name__ == "__main__":
     results = analyze_datasets()
     
     # Create and save plot
-    output_file = os.path.join(Config.OUTPUT_PATH, "eb_property_comparison.pdf")
+    output_file = os.path.join(Config.OUTPUT_PATH, "")
     create_comparison_plot(results, output_file)
     
     # Print statistics
