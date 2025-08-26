@@ -27,6 +27,5 @@ data/
 ```
 
 ##  Outputs
-- `results/eb_property_comparison.pdf`: Triple-panel comparison plot
-- `results/analysis_results.npz`: Numerical results
-- Console output: Statistical summary
+- `results/combined_comparison.pdf`: Triple-panel comparison plot
+
